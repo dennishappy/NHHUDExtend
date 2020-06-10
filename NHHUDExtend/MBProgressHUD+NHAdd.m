@@ -369,7 +369,7 @@ NS_INLINE MBProgressHUD *settHUD(UIView *view, NSString *title, BOOL autoHidden)
         
         if (hudContentStyle == NHHUDContentBlackStyle) {
             self.contentColor = [UIColor whiteColor];
-            self.bezelView.color = [UIColor blackColor];
+//            self.bezelView.color = [UIColor blackColor];
             self.bezelView.style = MBProgressHUDBackgroundStyleBlur;
             self.bezelView.blurEffectStyle = UIBlurEffectStyleDark;
             
