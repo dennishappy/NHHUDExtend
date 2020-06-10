@@ -193,8 +193,6 @@
 				0ACEECC31EEA6C110040ABAB /* Sources */,
 				0ACEECC41EEA6C110040ABAB /* Frameworks */,
 				0ACEECC51EEA6C110040ABAB /* Resources */,
-				6AE0458A9FA9CE9EE128ED42 /* [CP] Embed Pods Frameworks */,
-				4AE3E7DF9DF6BE89DDC9EEB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,8 +211,6 @@
 				0ACEECDC1EEA6C110040ABAB /* Sources */,
 				0ACEECDD1EEA6C110040ABAB /* Frameworks */,
 				0ACEECDE1EEA6C110040ABAB /* Resources */,
-				30C5F1566208F3F8AFECE984 /* [CP] Embed Pods Frameworks */,
-				6C2D54FDD91468B67B05BA13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,8 +230,6 @@
 				0ACEECE71EEA6C110040ABAB /* Sources */,
 				0ACEECE81EEA6C110040ABAB /* Frameworks */,
 				0ACEECE91EEA6C110040ABAB /* Resources */,
-				043BE50595AF91A2E1E1F627 /* [CP] Embed Pods Frameworks */,
-				137CAEA54B7CE06A0DC42FFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,66 +319,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		043BE50595AF91A2E1E1F627 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NHHUDExtendDemoUITests/Pods-NHHUDExtendDemoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		137CAEA54B7CE06A0DC42FFA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NHHUDExtendDemoUITests/Pods-NHHUDExtendDemoUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		30C5F1566208F3F8AFECE984 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NHHUDExtendDemoTests/Pods-NHHUDExtendDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4AE3E7DF9DF6BE89DDC9EEB0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NHHUDExtendDemo/Pods-NHHUDExtendDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		59F01117378C792D2AAA2C88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,36 +335,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6AE0458A9FA9CE9EE128ED42 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NHHUDExtendDemo/Pods-NHHUDExtendDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6C2D54FDD91468B67B05BA13 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NHHUDExtendDemoTests/Pods-NHHUDExtendDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6F11C595E8DE598734319BAA /* [CP] Check Pods Manifest.lock */ = {
@@ -630,7 +534,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NHHUDExtend.pch;
 				INFOPLIST_FILE = NHHUDExtendDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = neghao.studio.NHHUDExtendDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -646,7 +550,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NHHUDExtend.pch;
 				INFOPLIST_FILE = NHHUDExtendDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = neghao.studio.NHHUDExtendDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

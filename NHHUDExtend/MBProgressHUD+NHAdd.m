@@ -370,18 +370,20 @@ NS_INLINE MBProgressHUD *settHUD(UIView *view, NSString *title, BOOL autoHidden)
         if (hudContentStyle == NHHUDContentBlackStyle) {
             self.contentColor = [UIColor whiteColor];
             self.bezelView.color = [UIColor blackColor];
-            self.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+            self.bezelView.style = MBProgressHUDBackgroundStyleBlur;
+            self.bezelView.blurEffectStyle = UIBlurEffectStyleDark;
             
         } else if (hudContentStyle == NHHUDContentCustomStyle) {
             self.contentColor = NHCustomHudStyleContentColor;
             self.bezelView.color = NHCustomHudStyleBackgrandColor;
             self.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
             
+            
         } else if (hudContentStyle == NHHUDContentDefaultStyle){
             self.contentColor = [UIColor blackColor];
             self.bezelView.color = [UIColor colorWithWhite:0.902 alpha:1.000];
-            self.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
-            
+            self.bezelView.style = MBProgressHUDBackgroundStyleBlur;
+            self.bezelView.blurEffectStyle = UIBlurEffectStyleLight;
         }
         return self;
     };
