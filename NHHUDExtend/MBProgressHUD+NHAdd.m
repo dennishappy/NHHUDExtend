@@ -32,13 +32,14 @@ NS_INLINE MBProgressHUD *settHUD(UIView *view, NSString *title, BOOL autoHidden)
     // 隐藏时候从父控件中移除
     hud.removeFromSuperViewOnHide = YES;
     
-    //设置默认风格
-    if (NHDefaultHudStyle == 1) {
-        hud.hudContentStyle(NHHUDContentBlackStyle);
-        
-    } else if (NHDefaultHudStyle == 2) {
-        hud.hudContentStyle(NHHUDContentCustomStyle);
-    }
+    hud.hudContentStyle(NHHUDContentBlackStyle);
+//    //设置默认风格
+//    if (NHDefaultHudStyle == 1) {
+//        hud.hudContentStyle(NHHUDContentBlackStyle);
+//
+//    } else if (NHDefaultHudStyle == 2) {
+//        hud.hudContentStyle(NHHUDContentCustomStyle);
+//    }
     
     if (autoHidden) {
         // x秒之后消失
@@ -372,22 +373,27 @@ NS_INLINE MBProgressHUD *settHUD(UIView *view, NSString *title, BOOL autoHidden)
 
 - (MBProgressHUD *(^)(NHHUDContentStyle))hudContentStyle {
     return ^(NHHUDContentStyle hudContentStyle){
-        if (hudContentStyle == NHHUDContentBlackStyle) {
-            self.contentColor = [UIColor whiteColor];
-            self.bezelView.backgroundColor = [UIColor blackColor];
-            self.bezelView.style = MBProgressHUDBackgroundStyleBlur;
-            
-        } else if (hudContentStyle == NHHUDContentCustomStyle) {
-            self.contentColor = NHCustomHudStyleContentColor;
-            self.bezelView.backgroundColor = NHCustomHudStyleBackgrandColor;
-            self.bezelView.style = MBProgressHUDBackgroundStyleBlur;
-            
-        } else if (hudContentStyle == NHHUDContentDefaultStyle){
-            self.contentColor = [UIColor blackColor];
-            self.bezelView.backgroundColor = [UIColor colorWithWhite:0.902 alpha:1.000];
-            self.bezelView.style = MBProgressHUDBackgroundStyleBlur;
-            
-        }
+        
+        self.contentColor = [UIColor whiteColor];
+        self.bezelView.backgroundColor = [UIColor blackColor];
+        self.bezelView.style = MBProgressHUDBackgroundStyleBlur;
+        
+//        if (hudContentStyle == NHHUDContentBlackStyle) {
+//            self.contentColor = [UIColor whiteColor];
+//            self.bezelView.backgroundColor = [UIColor blackColor];
+//            self.bezelView.style = MBProgressHUDBackgroundStyleBlur;
+//            
+//        } else if (hudContentStyle == NHHUDContentCustomStyle) {
+//            self.contentColor = NHCustomHudStyleContentColor;
+//            self.bezelView.backgroundColor = NHCustomHudStyleBackgrandColor;
+//            self.bezelView.style = MBProgressHUDBackgroundStyleBlur;
+//            
+//        } else if (hudContentStyle == NHHUDContentDefaultStyle){
+//            self.contentColor = [UIColor blackColor];
+//            self.bezelView.backgroundColor = [UIColor colorWithWhite:0.902 alpha:1.000];
+//            self.bezelView.style = MBProgressHUDBackgroundStyleBlur;
+//            
+//        }
         return self;
     };
 }
