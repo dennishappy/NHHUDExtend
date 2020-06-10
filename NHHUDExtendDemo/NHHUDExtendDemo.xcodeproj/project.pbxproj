@@ -259,7 +259,7 @@
 				TargetAttributes = {
 					0ACEECC61EEA6C110040ABAB = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 69U78V53ZN;
+						DevelopmentTeam = 9RZG62CJSN;
 						ProvisioningStyle = Automatic;
 					};
 					0ACEECDF1EEA6C110040ABAB = {
@@ -281,6 +281,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -625,7 +626,7 @@
 			baseConfigurationReference = D0487AFF268117A406E78530 /* Pods-NHHUDExtendDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 69U78V53ZN;
+				DEVELOPMENT_TEAM = 9RZG62CJSN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NHHUDExtend.pch;
 				INFOPLIST_FILE = NHHUDExtendDemo/Info.plist;
@@ -641,7 +642,7 @@
 			baseConfigurationReference = 16EF3102FD66FBD457E456DF /* Pods-NHHUDExtendDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 69U78V53ZN;
+				DEVELOPMENT_TEAM = 9RZG62CJSN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NHHUDExtend.pch;
 				INFOPLIST_FILE = NHHUDExtendDemo/Info.plist;
